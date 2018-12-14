@@ -153,6 +153,69 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-pm2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/14/pm2/">pm2</a>
+    </h1>
+  
+
+        
+        <a href="/2018/12/14/pm2/" class="archive-article-date">
+  	<time datetime="2018-12-14T09:06:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="执行python脚本"><a href="#执行python脚本" class="headerlink" title="执行python脚本"></a>执行python脚本</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 start myscript.py -x --interpreter python</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/12/14/pm2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-nvm" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -713,69 +776,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/08/26/requirements/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-react" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/01/react/">react</a>
-    </h1>
-  
-
-        
-        <a href="/2018/06/01/react/" class="archive-article-date">
-  	<time datetime="2018-06-01T08:48:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="create-react-app-弹出配置文件"><a href="#create-react-app-弹出配置文件" class="headerlink" title="create-react-app 弹出配置文件"></a>create-react-app 弹出配置文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run eject</span><br></pre></td></tr></table></figure>
-<h3 id="配置scss"><a href="#配置scss" class="headerlink" title="配置scss"></a>配置scss</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">首先将你的文件名称改成scss结尾的文件</span><br><span class="line">然后安装依赖 npm install sass-loader node-sass --save-dev</span><br><span class="line">找到webpack.config.dev.js文件和webpack.config.prod.js文件</span><br><span class="line">将module配置项的最后一项配置改成如下</span><br><span class="line">&#123;</span><br><span class="line">    loader: require.resolve(<span class="string">'file-loader'</span>),</span><br><span class="line">    // Exclude `js` files to keep <span class="string">"css"</span> loader working as it injects</span><br><span class="line">    // it<span class="string">'s runtime that would otherwise processed through "file" loader.</span></span><br><span class="line"><span class="string">    // Also exclude `html` and `json` extensions so they get processed</span></span><br><span class="line"><span class="string">    // by webpacks internal loaders.</span></span><br><span class="line"><span class="string">    exclude: [/\.js$/, /\.html$/, /\.json$/,/\.scss$/],</span></span><br><span class="line"><span class="string">    options: &#123;</span></span><br><span class="line"><span class="string">         name: '</span>static/media/[name].[<span class="built_in">hash</span>:8].[ext]<span class="string">',</span></span><br><span class="line"><span class="string">    &#125;,</span></span><br><span class="line"><span class="string">&#125;,</span></span><br><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="string">    test: /\.scss$/,</span></span><br><span class="line"><span class="string">    loaders: ['</span>style-loader<span class="string">', '</span>css-loader<span class="string">', '</span>sass-loader<span class="string">'],</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">到此，配置完毕，记得两个文件都要改</span></span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/06/01/react/">展开全文 >></a>
         </p>
       
 
