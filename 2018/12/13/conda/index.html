@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Joe">
 <meta property="og:description" content="ubuntu安装conda1234wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.shbash Anaconda3-4.4.0-Linux-x86_64.shvi ~/.bashrcsource ~/.bashrc 查看环境conda info -e12 创建一个名为python34的环境，指定python版本">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-11T01:31:17.850Z">
+<meta property="og:updated_time" content="2019-03-18T09:10:10.935Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="conda">
 <meta name="twitter:description" content="ubuntu安装conda1234wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.shbash Anaconda3-4.4.0-Linux-x86_64.shvi ~/.bashrcsource ~/.bashrc 查看环境conda info -e12 创建一个名为python34的环境，指定python版本">
@@ -182,6 +182,8 @@
 <p>退出环境<br>source deactivate<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
 <h1 id="删除环境"><a href="#删除环境" class="headerlink" title="删除环境"></a>删除环境</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda remove --name python34 --all</span><br></pre></td></tr></table></figure>
 <h1 id="设置镜像"><a href="#设置镜像" class="headerlink" title="设置镜像"></a>设置镜像</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br></pre></td></tr></table></figure>
+<h1 id="修改默认环境"><a href="#修改默认环境" class="headerlink" title="修改默认环境"></a>修改默认环境</h1><p>在linux下，通过修改~/.bashrc或~/.bash_profile最后你会发现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=&quot;~/anaconda3/bin:$PATH&quot;</span><br></pre></td></tr></table></figure></p>
+<p>修改为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=&quot;~/anacond3/envs/python3/bin:$PATH&quot;</span><br></pre></td></tr></table></figure></p>
 
       
 
