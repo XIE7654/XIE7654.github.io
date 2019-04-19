@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>conda | Joe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="ubuntu安装conda1234wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.shbash Anaconda3-4.4.0-Linux-x86_64.shvi ~/.bashrcsource ~/.bashrc 查看环境conda info -e12 创建一个名为python34的环境，指定python版本">
+  <meta name="description" content="ubuntu安装conda12wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.shbash Anaconda3-4.4.0-Linux-x86_64.sh 如果在安装的过程中输入了yes，应该就直接安装成功了，不用再看下面的内容关于手动修改环境变量：1vi ~/.bashrc 在bashrc文件的最后添加：ex">
 <meta name="keywords" content="joe的个人博客, Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="conda">
 <meta property="og:url" content="http://yoursite.com/2018/12/13/conda/index.html">
 <meta property="og:site_name" content="Joe">
-<meta property="og:description" content="ubuntu安装conda1234wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.shbash Anaconda3-4.4.0-Linux-x86_64.shvi ~/.bashrcsource ~/.bashrc 查看环境conda info -e12 创建一个名为python34的环境，指定python版本">
+<meta property="og:description" content="ubuntu安装conda12wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.shbash Anaconda3-4.4.0-Linux-x86_64.sh 如果在安装的过程中输入了yes，应该就直接安装成功了，不用再看下面的内容关于手动修改环境变量：1vi ~/.bashrc 在bashrc文件的最后添加：ex">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-18T09:10:10.935Z">
+<meta property="og:updated_time" content="2019-04-19T14:13:04.810Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="conda">
-<meta name="twitter:description" content="ubuntu安装conda1234wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.shbash Anaconda3-4.4.0-Linux-x86_64.shvi ~/.bashrcsource ~/.bashrc 查看环境conda info -e12 创建一个名为python34的环境，指定python版本">
+<meta name="twitter:description" content="ubuntu安装conda12wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.shbash Anaconda3-4.4.0-Linux-x86_64.sh 如果在安装的过程中输入了yes，应该就直接安装成功了，不用再看下面的内容关于手动修改环境变量：1vi ~/.bashrc 在bashrc文件的最后添加：ex">
   
     <link rel="alternative" href="/atom.xml" title="Joe" type="application/atom+xml">
   
@@ -175,12 +175,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="ubuntu安装conda"><a href="#ubuntu安装conda" class="headerlink" title="ubuntu安装conda"></a>ubuntu安装conda</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.sh</span><br><span class="line">bash Anaconda3-4.4.0-Linux-x86_64.sh</span><br><span class="line">vi ~/.bashrc</span><br><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure>
+        <h1 id="ubuntu安装conda"><a href="#ubuntu安装conda" class="headerlink" title="ubuntu安装conda"></a>ubuntu安装conda</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.sh</span><br><span class="line">bash Anaconda3-4.4.0-Linux-x86_64.sh</span><br></pre></td></tr></table></figure>
+<h1 id="如果在安装的过程中输入了yes，应该就直接安装成功了，不用再看下面的内容"><a href="#如果在安装的过程中输入了yes，应该就直接安装成功了，不用再看下面的内容" class="headerlink" title="如果在安装的过程中输入了yes，应该就直接安装成功了，不用再看下面的内容"></a>如果在安装的过程中输入了yes，应该就直接安装成功了，不用再看下面的内容</h1><h1 id="关于手动修改环境变量："><a href="#关于手动修改环境变量：" class="headerlink" title="关于手动修改环境变量："></a>关于手动修改环境变量：</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi ~/.bashrc</span><br></pre></td></tr></table></figure>
+<h1 id="在bashrc文件的最后添加：export-PATH-”-home-用户名-anaconda3-bin-PATH”。（vi编辑器中按i进入编辑模式）"><a href="#在bashrc文件的最后添加：export-PATH-”-home-用户名-anaconda3-bin-PATH”。（vi编辑器中按i进入编辑模式）" class="headerlink" title="在bashrc文件的最后添加：export PATH=”/home/用户名/anaconda3/bin:$PATH”。（vi编辑器中按i进入编辑模式）"></a>在bashrc文件的最后添加：export PATH=”/home/用户名/anaconda3/bin:$PATH”。（vi编辑器中按i进入编辑模式）</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure>
 <h1 id="查看环境"><a href="#查看环境" class="headerlink" title="查看环境"></a>查看环境</h1><p>conda info -e<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
 <h1 id="创建一个名为python34的环境，指定python版本为3-4"><a href="#创建一个名为python34的环境，指定python版本为3-4" class="headerlink" title="创建一个名为python34的环境，指定python版本为3.4"></a>创建一个名为python34的环境，指定python版本为3.4</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create --name python34 python=3.4</span><br></pre></td></tr></table></figure>
 <h1 id="切换环境"><a href="#切换环境" class="headerlink" title="切换环境"></a>切换环境</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">activate python34 # for Windows</span><br><span class="line">source activate python34 # for Linux &amp; Mac</span><br></pre></td></tr></table></figure>
-<p>退出环境<br>source deactivate<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
-<h1 id="删除环境"><a href="#删除环境" class="headerlink" title="删除环境"></a>删除环境</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda remove --name python34 --all</span><br></pre></td></tr></table></figure>
+<h1 id="退出环境"><a href="#退出环境" class="headerlink" title="退出环境"></a>退出环境</h1><h1 id="source-deactivate"><a href="#source-deactivate" class="headerlink" title="source deactivate"></a>source deactivate</h1><h1 id="删除环境"><a href="#删除环境" class="headerlink" title="删除环境"></a>删除环境</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda remove --name python34 --all</span><br></pre></td></tr></table></figure>
 <h1 id="设置镜像"><a href="#设置镜像" class="headerlink" title="设置镜像"></a>设置镜像</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br></pre></td></tr></table></figure>
 <h1 id="修改默认环境"><a href="#修改默认环境" class="headerlink" title="修改默认环境"></a>修改默认环境</h1><p>在linux下，通过修改~/.bashrc或~/.bash_profile最后你会发现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=&quot;~/anaconda3/bin:$PATH&quot;</span><br></pre></td></tr></table></figure></p>
 <p>修改为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=&quot;~/anacond3/envs/python3/bin:$PATH&quot;</span><br></pre></td></tr></table></figure></p>
