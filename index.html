@@ -177,6 +177,8 @@
 <h3 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h3><p> 使用 .gitignore 设置忽略哪些文件.gitignore 设置的忽略文件，<br> 在git代码管理和 npm publish 都会被忽略</p>
 <h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><p> 使用 .npmignore 设置忽略哪些文件.npmignore 的写法跟 .gitignore 的规则完全一样。<br> 若同时使用了 .npmignore 和 .gitignore，只有 .npmignore 会生效，优先级比较高。</p>
 <h3 id="方法三："><a href="#方法三：" class="headerlink" title="方法三："></a>方法三：</h3><p>使用 package.json 的 files 字段选择发布哪些文件直接在 package.json 中 files 字段设置发布哪些文件或目录。这个优先级高于 .npmignore 和 .gitignore。</p>
+<p>执行 npm publish  报错，因为有些同学本地设置了 淘宝的npm 镜像源，npm 包发布到这个镜像源就有问题了，最简单的方式是 ：发布时候指定地址</p>
+<p>1<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm publish -registry=https://registry.npmjs.org/</span><br></pre></td></tr></table></figure></p>
 
       
 
