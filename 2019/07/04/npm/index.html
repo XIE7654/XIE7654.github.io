@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>fq | XIE</title>
+  <title>npm | XIE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="123456789101112&amp;#123;	&amp;quot;server&amp;quot;: &amp;quot;0.0.0.0&amp;quot;,	&amp;quot;local_address&amp;quot;: &amp;quot;127.0.0.1&amp;quot;,	&amp;quot;local_port&amp;quot;: 1080,	&amp;quot;port_password&amp;quot;: &amp;#123;		&amp;quot;8388&amp;quot;: &amp;quo">
+  <meta name="description" content="npm publish 的时候会把项目目录里面所有的文件都publish到npm仓库中， 但是往往有一部分目录和文件不想发布上去，比如项目的源码、编译脚本等等信息。 如何发布用户需要使用的相关文件呢？ 方法一： 使用 .gitignore 设置忽略哪些文件.gitignore 设置的忽略文件， 在git代码管理和 npm publish 都会被忽略 方法二： 使用 .npmignore 设置忽略哪">
 <meta name="keywords" content="XIE的个人博客, Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="fq">
-<meta property="og:url" content="http://yoursite.com/2019/04/19/fq/index.html">
+<meta property="og:title" content="npm">
+<meta property="og:url" content="http://yoursite.com/2019/07/04/npm/index.html">
 <meta property="og:site_name" content="XIE">
-<meta property="og:description" content="123456789101112&amp;#123;	&amp;quot;server&amp;quot;: &amp;quot;0.0.0.0&amp;quot;,	&amp;quot;local_address&amp;quot;: &amp;quot;127.0.0.1&amp;quot;,	&amp;quot;local_port&amp;quot;: 1080,	&amp;quot;port_password&amp;quot;: &amp;#123;		&amp;quot;8388&amp;quot;: &amp;quo">
+<meta property="og:description" content="npm publish 的时候会把项目目录里面所有的文件都publish到npm仓库中， 但是往往有一部分目录和文件不想发布上去，比如项目的源码、编译脚本等等信息。 如何发布用户需要使用的相关文件呢？ 方法一： 使用 .gitignore 设置忽略哪些文件.gitignore 设置的忽略文件， 在git代码管理和 npm publish 都会被忽略 方法二： 使用 .npmignore 设置忽略哪">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-19T10:12:06.481Z">
+<meta property="og:updated_time" content="2019-07-04T08:00:06.447Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="fq">
-<meta name="twitter:description" content="123456789101112&amp;#123;	&amp;quot;server&amp;quot;: &amp;quot;0.0.0.0&amp;quot;,	&amp;quot;local_address&amp;quot;: &amp;quot;127.0.0.1&amp;quot;,	&amp;quot;local_port&amp;quot;: 1080,	&amp;quot;port_password&amp;quot;: &amp;#123;		&amp;quot;8388&amp;quot;: &amp;quo">
+<meta name="twitter:title" content="npm">
+<meta name="twitter:description" content="npm publish 的时候会把项目目录里面所有的文件都publish到npm仓库中， 但是往往有一部分目录和文件不想发布上去，比如项目的源码、编译脚本等等信息。 如何发布用户需要使用的相关文件呢？ 方法一： 使用 .gitignore 设置忽略哪些文件.gitignore 设置的忽略文件， 在git代码管理和 npm publish 都会被忽略 方法二： 使用 .npmignore 设置忽略哪">
   
     <link rel="alternative" href="/atom.xml" title="XIE" type="application/atom+xml">
   
@@ -155,27 +155,30 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-fq" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-npm" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      fq
+      npm
     </h1>
   
 
         
-        <a href="/2019/04/19/fq/" class="archive-article-date">
-  	<time datetime="2019-04-19T10:11:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-19</time>
+        <a href="/2019/07/04/npm/" class="archive-article-date">
+  	<time datetime="2019-07-04T07:58:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;server&quot;: &quot;0.0.0.0&quot;,</span><br><span class="line">	&quot;local_address&quot;: &quot;127.0.0.1&quot;,</span><br><span class="line">	&quot;local_port&quot;: 1080,</span><br><span class="line">	&quot;port_password&quot;: &#123;</span><br><span class="line">		&quot;8388&quot;: &quot;JUN765462425&quot;,</span><br><span class="line">		&quot;8389&quot;: &quot;test01&quot;</span><br><span class="line">	&#125;,</span><br><span class="line">	&quot;timeout&quot;: 300,</span><br><span class="line">	&quot;method&quot;: &quot;aes-256-cfb&quot;,</span><br><span class="line">	&quot;fast_open&quot;: false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>npm publish 的时候会把项目目录里面所有的文件都publish到npm仓库中，<br> 但是往往有一部分目录和文件不想发布上去，比如项目的源码、编译脚本等等信息。<br> 如何发布用户需要使用的相关文件呢？</p>
+<h3 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h3><p> 使用 .gitignore 设置忽略哪些文件.gitignore 设置的忽略文件，<br> 在git代码管理和 npm publish 都会被忽略</p>
+<h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><p> 使用 .npmignore 设置忽略哪些文件.npmignore 的写法跟 .gitignore 的规则完全一样。<br> 若同时使用了 .npmignore 和 .gitignore，只有 .npmignore 会生效，优先级比较高。</p>
+<h3 id="方法三："><a href="#方法三：" class="headerlink" title="方法三："></a>方法三：</h3><p>使用 package.json 的 files 字段选择发布哪些文件直接在 package.json 中 files 字段设置发布哪些文件或目录。这个优先级高于 .npmignore 和 .gitignore。</p>
 
       
 
@@ -255,7 +258,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/19/fq/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/04/npm/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -269,18 +272,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/07/04/npm/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          npm
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/12/14/django-import-export/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">django-import-export</div>
+    <a href="/2019/04/19/fq/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">fq</div>
       <i class="icon-circle-right"></i>
     </a>
   
