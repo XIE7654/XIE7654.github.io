@@ -153,6 +153,73 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-scrapy" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/26/scrapy/">scrapy</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/26/scrapy/" class="archive-article-date">
+  	<time datetime="2020-04-26T07:35:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy startproject scrapy_first</span><br></pre></td></tr></table></figure>
+<h3 id="生成爬虫模版文件"><a href="#生成爬虫模版文件" class="headerlink" title="生成爬虫模版文件"></a>生成爬虫模版文件</h3><p>scrapy genspider -t 母版名称 爬虫文件名称 要爬取的域名<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy genspider -t basic filter baidu.com</span><br></pre></td></tr></table></figure></p>
+<p>可以不加-t basic, 默认使用basic模版</p>
+<h3 id="测试一个爬虫文件是否合规-scrapy-check-爬虫名称"><a href="#测试一个爬虫文件是否合规-scrapy-check-爬虫名称" class="headerlink" title="测试一个爬虫文件是否合规 scrapy check 爬虫名称"></a>测试一个爬虫文件是否合规 scrapy check 爬虫名称</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy check filter</span><br></pre></td></tr></table></figure>
+<h3 id="执行爬虫文件-scrapy-crawl-爬虫名称"><a href="#执行爬虫文件-scrapy-crawl-爬虫名称" class="headerlink" title="执行爬虫文件 scrapy crawl 爬虫名称"></a>执行爬虫文件 scrapy crawl 爬虫名称</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">scrapy crawl filter</span><br><span class="line">scrapy crawl filter --nolog  <span class="comment"># 不显示日志</span></span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/26/scrapy/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-npm" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -770,72 +837,6 @@
 
 
   
-    <article id="post-fixed" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/03/fixed/">fixed</a>
-    </h1>
-  
-
-        
-        <a href="/2018/09/03/fixed/" class="archive-article-date">
-  	<time datetime="2018-09-03T12:54:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天入了个小坑，底部元素设置position:fixed;没有效果的问题，查了很久才发现原来原因。</p>
-<p>如果一个元素设置了position:fixed;其父元素设置了tansform属性的话，不管是scale()、rotate()、还是translate()，其fixed值都会失效，直接会使position:fixed;变成position:absolute;的效果。</p>
-<p>所以，我们fixed的元素的父级有transform属性的话，fixed效果完全没有，</p>
-<p>社么，解决办法？no way！解决办法就是fixed的元素不使用transform属性。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/03/fixed/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -850,7 +851,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 XIE
+    		&copy; 2020 XIE
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
